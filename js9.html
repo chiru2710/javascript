@@ -1,0 +1,40 @@
+<!--                     SWITCH CASE      -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case for Marks</title>
+</head>
+
+<body>
+    <h1>.....Student Marks.....</h1>
+    <script>
+        let name = prompt("Enter Your Name:");
+        let marks = parseInt(prompt("Enter Your Marks:"), 10);
+        let result;
+
+        switch (true) {
+            case marks >= 90 && marks <= 100:
+                result = "A Grade";
+                break;
+            case marks >= 80 && marks < 90:
+                result = "B Grade";
+                break;
+            case marks >= 70 && marks < 80:
+                result = "C Grade";
+                break;
+            case marks >= 0 && marks < 70:
+                result = "Below C Grade";
+                break;
+            default:
+                result = "Invalid marks entered.";
+        }
+
+        document.write("Hi " + name + ", your result is: " + result);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Variables</title>
+</head>
+<body>
+  <h1 style="background-color: chartreuse; color: black; text-align: center;">JAVASCRIPT VARIABLES</h1>
+  <p style="font-size: x-large;">Variables are used to store values.</p>
+  <p style="font-size: larger;">We have three types of variables in JavaScript, they are as follows:</p>
+
+  <p style="background-color: cornflowerblue; color: black; font-size: larger;">
+    1. <b>var</b>:<br>
+    "In <code>var</code>, we can reassign the value and also re-declare the variable."
+  </p>
+
+  <p style="background-color: coral; color: black; font-size: larger;">
+    2. <b>let</b>:<br>
+    "In <code>let</code>, we can reassign the value but we cannot re-declare the variable in the same scope."
+  </p>
+
+  <p style="background-color: cornsilk; color: black; font-size: larger;">
+    3. <b>const</b>:<br>
+    "In <code>const</code>, we cannot reassign the value and we also cannot re-declare the variable."
+  </p>
+
+  <script>
+    // ---------------- VAR ----------------
+    var a = "chiru";
+    console.log("Initial var:", a); // chiru
+
+    // Reassigning
+    a = "chiranjeevi";
+    console.log("After reassigning var:", a); // chiranjeevi ✅ works
+
+    // Redeclaring
+    var a = "mega star";
+    console.log("After redeclaring var:", a); // mega star ✅ works
+
+
+    // ---------------- LET ----------------
+    let b = "odi cricket";
+    console.log("Initial let:", b); // odi cricket
+
+    // Reassigning
+    b = "t20 cricket";
+    console.log("After reassigning let:", b); // t20 cricket ✅ works
+
+    // Redeclaring (❌ Error)
+    // let b = "test cricket"; // Uncaught SyntaxError: Identifier 'b' has already been declared
+
+
+    // ---------------- CONST ----------------
+    const c = "tollywood";
+    console.log("Initial const:", c); // tollywood
+
+    // Reassigning (❌ Error)
+    // c = "hollywood"; // Uncaught TypeError: Assignment to constant variable.
+
+    // Redeclaring (❌ Error)
+    // const c = "bollywood"; // Uncaught SyntaxError: Identifier 'c' has already been declared
+  </script>
+</body>
+</html>

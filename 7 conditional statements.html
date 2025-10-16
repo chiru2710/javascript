@@ -1,0 +1,87 @@
+<!-- control flow or condtional statements:"contional statements are used to control the flow of execution of the 
+ program based on the condition"-->
+<!-- we have four conditional statements in javaScript they are 
+  1.if
+  2.if-else
+  3.else-if-else
+  4.switch
+  5.terinary operator-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+
+<body>
+    <h1 style="background-color: deepskyblue; color: crimson; text-align: center; font-size: larger;">
+        Conditional Statements
+    </h1>
+    <center>
+        <script>
+            // Example 1: if-else-if ladder
+            let x = 1;
+            let y = 2;
+
+            if (x == y) {
+                document.write(`X is equal to Y: ${x}, ${y}<br>`); // if
+            } else if (x > y) {
+                document.write(`X is greater than Y: ${x}, ${y}<br>`); // else-if
+            } else {
+                document.write(`X is less than Y: ${x}, ${y}<br>`); // else
+            }
+
+            // Example 2: switch statement
+            let fruits = "Apple"; // Declare and assign value to 'fruits'
+
+            switch (fruits) {
+                case "Banana":
+                    document.write("Hello, it's a Banana!<br>");
+                    break;
+                case "Apple":
+                    document.write("Welcome, it's an Apple!<br>");
+                    break;
+                default:
+                    document.write("Neither Banana nor Apple!<br>");
+                    break;
+            }
+
+            // Example 3: switch with conditional expressions
+            let answer;
+
+            switch (true) {
+                case 10 == 20:
+                    answer = "The two numbers are equal";
+                    break;
+                case 10 >= 20:
+                    answer = "The first number is greater than or equal to the second number";
+                    break;
+                case 15 <= 5:
+                    answer = "The first number is less than or equal to the second number";
+                    break;
+                case 100 > 200:
+                    answer = "The first number is greater than the second number";
+                    break;
+                case 100 < 200:
+                    answer = "The first number is less than the second number";
+                    break;
+                default:
+                    answer = "Not found";
+                    break;
+            }
+
+            document.write(answer);
+            //Terinary operator
+            //condition ? expressionIfTrue : expressionIfFalse;
+            let age = 20;
+            let result = (age >= 18) ? "You are an adult" : "You are a minor";
+            console.log(result);
+
+
+        </script>
+    </center>
+</body>
+
+</html>

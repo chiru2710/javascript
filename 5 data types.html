@@ -1,0 +1,50 @@
+<!-- DATA TYPES -->
+<!-- 
+DATA TYPES are used to define the type of data. We have two types:
+1. Primitive data types (String, Boolean, Null, Undefined, Number,symbol,bigint) ->inmutable
+2. Complex data types (Array, Object,functions) ->Mutable
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types Example</title>
+    <h4>Primitive DataTypes</h4>
+</head>
+<body>
+    <script>
+        
+        // String
+        let c = "chiru";
+        document.write("String: " + c + "<br><br>");
+
+        // Number
+        let a = 10;
+        document.write("Number: " + a + "<br><br>");
+
+        // Boolean
+        let isGreater = 10 > 20; // Boolean expression
+        document.write("Boolean: " + isGreater + "<br><br>");
+
+        // Undefined
+        let b;
+        document.write("Undefined: " + b + "<br><br>");
+
+        // Null
+        let m = null;
+        document.write("Null: " + m + "<br><br>");
+        //complex datatypes
+        document.write("<P>complex DataTypes</P>");
+        let games = ["cricket",11,"kabaddi",7]
+        document.write("array:",games+"<br><br>");
+        var ipl ={
+            srh:"hyderabad",
+            csk:"chennai",
+            rcb:"bangalore"
+        }
+        document.write(ipl);
+
+    </script>
+</body>
+</html>

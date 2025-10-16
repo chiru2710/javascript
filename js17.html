@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Elements By Class Name Example</title>
+  <style>
+    .myClass {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <p class="myClass">This is a paragraph with class 'myClass'.</p>
+  <p>This is a paragraph without the class.</p>
+  <p class="myClass">Another paragraph with class 'myClass'.</p>
+
+  <script>
+    // Get all elements with class name 'myClass'
+    var elements = document.getElementsByClassName('myClass');
+
+    // Loop through the elements and change their color
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.color = 'red';
+    }
+  </script>
+</body>
+</html>

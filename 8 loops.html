@@ -1,0 +1,89 @@
+<!--    loops                      -->
+ <!-- 
+        ==============================
+        🔹 Loops in JavaScript
+        ==============================
+        👉 Definition:
+           A loop is used to execute a block of code repeatedly 
+           as long as a specified condition is true.
+
+        👉 Types of Loops in JavaScript:
+           1. for loop       → repeats code for a fixed number of times
+           2. while loop     → repeats code while condition is true
+           3. do-while loop  → executes at least once, then checks condition
+           4. for-in loop    → iterates over object properties
+           5. for-of loop    → iterates over iterable objects (arrays, strings, etc.)
+        ==============================
+
+         for loop()
+         syntax:
+          for(initialization; condition; increment/decrement) {
+              body of the loop
+         } -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Example</title>
+</head>
+<body>
+    <script>
+        document.write("for loop<br><br>")
+        for (let c = 0; c < 5; c++) {
+            document.write("Chiranjeevi<br>");
+        }
+
+        // while loop()
+        // syntax:
+        // while(condition) {
+        //     // body of the loop
+        // }
+
+        document.write("<br>while loop<br><br>")
+        let a = 0;
+        while (a <= 7) {
+            document.write("Indian Administrative Service<br>");
+            a++;
+        }
+
+        // do-while loop()
+        // syntax:
+        // do {
+        //     // body of the loop
+        // } while(condition);
+
+        document.write("<br>do-while loop<br><br>")
+        let b = 0;
+        do {
+            document.write("Ongole<br>");
+            b++;
+        } while (b > 5);
+
+        // for-in loop()
+        // syntax:
+        // for (key in object) {
+        //     // body of the loop
+        // }
+
+        document.write("<br>for-in loop<br><br>")
+        let student = {name: "Chiru", age: 22, city: "Ongole"};
+        for (let key in student) {
+            document.write(key + " : " + student[key] + "<br>");
+        }
+
+        // for-of loop()
+        // syntax:
+        // for (element of iterable) {
+        //     // body of the loop
+        // }
+
+        document.write("<br>for-of loop<br><br>")
+        let fruits = ["Apple", "Banana", "Mango", "Orange"];
+        for (let fruit of fruits) {
+            document.write(fruit + "<br>");
+        }
+    </script>
+</body>
+</html>

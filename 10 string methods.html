@@ -1,0 +1,61 @@
+<!--                             String Methods                 -->
+<!--In javascript string methods we have the following methods
+1.split
+2.charAt(index number)
+3.trim
+4.substring(start,end)
+5.replace
+6.touppercase
+7.tolowercase
+8.charCodeAt (UTF-16/ASCII value)
+9.at(index number)
+10.concatination (str1,str2,......,strn)
+11.includes(searchstring,position)
+12.indexof(searchvalue,fromindex)
+13.lastIndexof(searchvalue,fromindex)
+14.match(regular expression)
+15.matchAll(regular expression)
+16.padstart(targetlength,padstring)
+17.replace(searchvalue,replacevalue)
+18.replaceAll(searchvalue,replacevalue)
+19.search(regx)
+20.slice(start,end)
+21.startswith(searchstring,position)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <script>
+        let bcci="Board of Cricket Control in India"
+        let ipl="Indian Premium Leaguge"
+        document.write(bcci.split(" ")+"<br>")
+        document.write(bcci.charAt(2)+"<br>")
+        document.write(bcci.slice()+"<br>")
+        document.write(bcci.charCodeAt(5)+"<br>")
+        document.write(bcci.at(3)+"<br>")
+        document.write(bcci.concat(" ",ipl)+"<br>")
+        document.write(ipl.includes("India",0)+"<br>")
+        document.write(ipl.indexOf("a",0)+"<br>")
+        document.write(ipl.lastIndexOf("a",0)+"<br>")
+        document.write(ipl.match(/a/g)+"<br>")
+        let phno="+91"
+        document.write(phno.padStart(4,"x")+"<br>")
+        document.write(phno.padEnd(10,"x")+"<br>")
+        document.write(bcci.replace("Board","CHIRU")+"<br>")
+        document.write(bcci.replaceAll("Cricket","chirala")+"<br>")
+        document.write(bcci.slice(0,3)+"<br>")
+        document.write(bcci.startsWith("B",0)+"<br>")
+        document.write(ipl.endsWith("a")+"<br>")
+        document.write(ipl.toUpperCase()+"<br>")
+        document.write(ipl.toLowerCase()+"<br>")
+        document.write(ipl.trimStart("a",0)+"<br>")
+
+
+    </script>
+    
+</body>
+</html>

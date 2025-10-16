@@ -1,0 +1,40 @@
+<!--                   SCOPES IN JAVASCRIPT         -->
+<!--In javascript we have Three types of scopes they are:
+1.Global scope => "the variables which are declared that can be accessed at any where in program"
+2.Function scope => "The variables which are declared which are inside the function that can be acessed within the function"
+3.Block scope => "The variables which are declared which are  the block that can be acessed within the block but we can acess it OUTSIDE by using VAR KEYWORD"
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope in javaScript</title>
+</head>
+<body>
+    <script>
+        // Global Scope
+let globalVar = "I am global";
+
+function showScopes() {
+  // Function Scope
+  let functionVar = "I am inside a function";
+
+  if (true) {
+    // Block Scope
+    let blockVar = "I am inside a block";
+    console.log(blockVar); // Accessible here
+  }
+
+  // console.log(blockVar); // Uncaught ReferenceError: blockVar is not defined
+  console.log(functionVar); // Accessible here
+  console.log(globalVar); // Accessible here
+}
+
+showScopes();
+// console.log(functionVar); // Uncaught ReferenceError: functionVar is not defined
+console.log(globalVar); // Accessible here
+
+    </script>
+</body>
+</html>

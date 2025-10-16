@@ -1,0 +1,57 @@
+<!--       FUNCTIONS IN JAVASCRIPT            -->
+<!-- Functions in javascript always starts with the function keyword followed by function name
+
+// we have four types of functions in Javascript thet are:
+        // 1.named function(it can be hosted)
+        // 2.anonymous function
+        // 3.arrow function
+        // 4.immediately invoked function execution
+syntax: FUNCTION function_name()
+ {
+ list of statements;
+ }
+ function_name(); //invoking or calling
+ -->       
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions in js</title>
+</head>
+<body>
+    <script>
+    // 1.named function(it can be hosted)
+        function name(){
+            let name =prompt("enter your name")  
+            document.write(name)
+        }
+        name();
+        //function with arguments
+        function add(a,b){
+            return a+b;
+        }
+        console.log(add(10,5))
+    // 2.anonymous function
+        let sub=function(a,b){
+            return a-b;
+        }
+        console.log(sub(9,4))
+
+        let add=function(one){
+            return one(a,b)
+        }
+        let adding=function(a,b){
+            console.log(a+b)
+        }
+        add(adding)
+
+        function greet(name,callback){
+            console.log("hello",name)
+        }
+          greet("ramu",function(){
+            console.log("hello how are you")
+          } )
+    </script>
+</body>
+</html>

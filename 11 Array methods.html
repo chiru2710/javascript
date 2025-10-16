@@ -1,0 +1,85 @@
+<!--
+1.Array(slice,join,slice,splice,indexof,foreach,push,pop,shift,unshift,concat)
+flat()-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+</head>
+
+<body>
+    <script>
+        //Array method
+        //push()=the push method is used to add one or more elements to the array
+        var fruits = ["apple", "mango"]
+        fruits.push("banana");
+        document.write(fruits + "<br><br>")
+
+        //pop()=pop is used to remove the last element of an array
+        var sports = ["cricket", "volleyball", "swimming"]
+        sports.pop();
+        document.write(sports + "<br><br>");
+        //shift()=removes first element from the array and returns that element is known as shift
+        var colors = ["green", "blue", "white"]
+        colors.shift();
+        document.write(colors + "<br><br>");
+        //unshift()=adds one or more elements to starting of the array
+        var number = [1, 2, 3, 4, 5]
+        number.unshift(0)
+        document.write(number + "<br><br>");
+        //concat()=it is used to add two array
+        var colors = ["green", "blue", "white"]
+        var number = [1, 2, 3, 4, 5]
+        var new_array = colors.concat(number)
+        document.write(new_array + "<br><br>")
+        //join()=it add all the elements of the array into a single string and adds a special character between the elements
+        var states = ["AP", "MP", "TS", "TN", "amaravati", "indore", "hyderabad", "chennai"]
+        var india = states.join("*")
+        document.write(india + "<br><br>");
+        //slice()=slice is used to print particular portion of an array
+        var colors = ["green", "blue", "white", "black", "pink", "orange"]
+        colors1 = colors.slice(0, 2)
+        document.write(colors1 + "<br><br>");
+        //splice()=change the content of the array the add or remove and replace
+        let arr = [1, 2, 3, 4, 5];
+        arr.splice(2, 2); // Removes 2 elements starting at index 2
+        document.write(arr + "<br><br>"); // Output: [1, 2, 5]
+        let arr1 = [1, 2, 3];
+        arr.splice(1, 0, 'a', 'b'); // Adds 'a' and 'b' starting at index 1
+        document.write(arr1 + "<br><br>"); // Output: [1, 'a', 'b', 2, 3]
+        //flat()
+        console.log(arr.flat(arr1))
+        //fill()
+        console.log(arr.fill(1))
+        //indexof()=returns the index positon of the element in array and if the search element is not in array then it returns -1
+        let students = ["mahesh", "suresh", "ramesh"]
+        document.write(students.indexOf("suresh") + "<br><br>")
+        //foreach()= this method allows you to execute a provided function once for each element in an array. It's commonly used to perform operations on array elements without creating a new array.
+        const numbers = [1, 2, 3, 4, 5];
+        numbers.forEach(function (number) {
+            document.write(number+"<br><br>");
+        });
+        //multi-dimensional array()
+        let cube = [
+            [ // Layer 1
+                [1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]
+            ],
+            [ // Layer 2
+                [10, 11, 12],
+                [13, 14, 15],
+                [16, 17, 18]
+            ]
+        ];
+
+        // Access elements
+        document.write("multi-dimensional array : "+cube[0][1][2]);
+        
+    </script>
+</body>
+
+</html>

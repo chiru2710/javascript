@@ -1,0 +1,34 @@
+<!--                           Return Function                 -->
+<!--   IN Return Function we have three types they are 
+1.Function Expression =>Assing Function to a Variable is called Function Expression
+2.Anonymous Function =>The Function which Doesn't have a Function Name is called Anonymous Function
+3.Function with Parameter and Return value =>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Function</title>
+</head>
+<body>
+    <h1><center>
+        Return Function
+    </center></h1>
+    <script>
+        var a=function cricket(){
+            document.write("cricket is an Bat and Ball game played by two teams and each team consists of 11 pllayers" + "<br><br>")
+           
+        }
+        a();
+        var b=function(){
+            document.write("Kabaddi is game played by two teams in each have 7 plaers"+"<br><br>")
+        }
+        b();
+        function games(a,b){
+           return document.write("I like " + a + " and " + b)
+        }
+        games("cricket","volleyball");
+    </script>
+</body>
+</html>
