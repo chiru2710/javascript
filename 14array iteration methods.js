@@ -33,3 +33,14 @@ fetch("https://dummyjson.com/quotes")
 
     console.log(op);
   })
+
+  //reduce(callback)
+      //callback-acc,ele,index,array
+      //will give the single value
+    let arr=[1,2,3,4,5];
+    let getOut=arr.reduce(
+      (acc,ele,index,arr)=>{
+        return acc+ele
+      },2
+    )
+    console.log(getOut)
