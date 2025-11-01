@@ -1,3 +1,4 @@
+//Mouse events
 let mouse=document.getElementById('mouse')
 let h1=document.getElementById('h1')
 mouse.addEventListener('mousedown',()=>
@@ -13,7 +14,7 @@ mouse.addEventListener('mouseup',()=>
     h1.textContent='Mouse up'
    h1.style.color="red"
 })
-mouse,addEventListener('mouseover',()=>
+mouse.addEventListener('mouseover',()=>
 {
     mouse.style.color="black"
     mouse.style.backgroundColor="yellow"
