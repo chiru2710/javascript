@@ -31,3 +31,10 @@ form.addEventListener('submit',(e)=>
     e.preventDefault()
     console.log(text.value)
 })
+
+// local storage
+// the capacity of local storage is upto 10mb
+localStorage.setItem("user","chiru")
+// localStorage.removeItem("user") to remove data from local storage by using keys only
+//session storage
+// the capacity of session storage is upto 5mb
